@@ -179,7 +179,6 @@ header .navig li a{
     padding: 0 10px;
     color: #000; 
     text-decoration: none;
-    font-family: 'Playfair Display','serif';
     font-style: italic;
     font-size: 20px;
     font-weight: 500;
@@ -286,9 +285,14 @@ header .soc-netw select option{
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    background: #f09d66;
     padding: 10px 20px;
     margin-top: 60px;
+    text-decoration: none;
+}
+
+
+.container3 .sale .content a:hover{
+    background: #000;
 }
 
 .container3 .content {
@@ -328,8 +332,6 @@ header .soc-netw select option{
 .container5 .title {
     overflow: hidden;
     text-align: center;
-    font-size: 25px;
-    font-family: 'Playfair Display','serif';
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
@@ -405,7 +407,6 @@ header .soc-netw select option{
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    background: #f09d66;
     padding: 10px 15px;
     margin-top: 50px;
     display:none;
@@ -462,7 +463,6 @@ header .soc-netw select option{
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    background: #f09d66;
     padding: 10px 15px;
     margin-top: 50px;
     display:none;
@@ -507,7 +507,6 @@ header .soc-netw select option{
     overflow: hidden;
     text-align: center;
     font-size: 25px;
-    font-family: 'Playfair Display','serif';
     font-style: italic;
     font-size: 30px;
     font-weight: bold;
@@ -625,14 +624,6 @@ header .soc-netw select option{
 
 .container8 .block .item img:hover{
     opacity: 0.4;
-}
-
-.container8 .block .item #trapezium1:hover {
-    border-bottom: 45px solid #f09d66;
-}
-
-.container8 .block .item #trapezium2:hover {
-    border-bottom: 45px solid #f09d66;
 }
 
 
