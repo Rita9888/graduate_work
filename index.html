@@ -425,28 +425,27 @@
             }
         })
     </script>
-    <script type="text/javascript">
- 
-        jQuery(document).ready(function() {
-        
-        var btn = $('#toTop');
-
+    <script>
+        $(function() {
+          // при нажатии на кнопку scrollup
+          $('.scrollup').click(function() {
+            // переместиться в верхнюю часть страницы
+            $("html, body").scrollTop(0);
+          })
+        })
+        // при прокрутке окна (window)
         $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
-            btn.addClass('show');
-            } else {
-            btn.removeClass('show');
-            }
+          // если пользователь прокрутил страницу более чем на 200px
+          if ($(this).scrollTop()>200) {
+            // то сделать кнопку scrollup видимой
+            $('.scrollup').fadeIn();
+          }
+          // иначе скрыть кнопку scrollup
+          else {
+            $('.scrollup').fadeOut();
+          }
         });
-
-        btn.on('click', function(e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop:0}, '900');
-        });
-
-        });
-         
         </script>
-         <div id="toTop"><i class="far fa-caret-square-up"></i></div>
+         <div class="scrollup"><i class="far fa-caret-square-up"></i></div>
 </body>
 </html>

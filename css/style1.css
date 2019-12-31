@@ -57,9 +57,14 @@ table {
 }
 
 .top-border .call{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     float: right;
 }
 
@@ -185,8 +190,12 @@ header .navig li:hover a{
 }
 
 header .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
 }
 
@@ -241,7 +250,9 @@ header .soc-netw select option{
     width: 14px;
     height: 14px;
     border-radius: 0;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .container3 .owl-theme .owl-nav.disabled+.owl-dots span:active{
@@ -255,10 +266,19 @@ header .soc-netw select option{
 }
 
 .container3 .sale .content{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container3 .sale .content a{
@@ -315,6 +335,7 @@ header .soc-netw select option{
     font-weight: bold;
     margin: 40px 40px;
 }
+
 .container5 .title:before,
 .container5 .title:after {
     content: "";
@@ -325,10 +346,12 @@ header .soc-netw select option{
     background-color: #e1e1e1;
     position: relative;
 }
+
 .container5 .title:before {
     margin-left: -100%;
     left: -14px;
 }
+
 .container5 .title:after {
     margin-right: -100%;
     right: -14px;
@@ -362,10 +385,19 @@ header .soc-netw select option{
     position: absolute;
     top: 20px;
     left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container6 .square1 a{
@@ -410,10 +442,19 @@ header .soc-netw select option{
     position: absolute;
     top: 400px;
     left: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container6 .square2 a{
@@ -614,6 +655,7 @@ header .soc-netw select option{
     font-weight: bold;
     margin: 70px 40px;
 }
+
 .container9 .title:before,
 .container9 .title:after {
     content: "";
@@ -624,10 +666,12 @@ header .soc-netw select option{
     background-color: #e1e1e1;
     position: relative;
 }
+
 .container9 .title:before {
     margin-left: -100%;
     left: -14px;
 }
+
 .container9 .title:after {
     margin-right: -100%;
     right: -14px;
@@ -671,6 +715,7 @@ header .soc-netw select option{
     font-weight: bold;
     margin: 70px 40px;
 }
+
 .container11 .title:before,
 .container11 .title:after {
     content: "";
@@ -681,10 +726,12 @@ header .soc-netw select option{
     background-color: #e1e1e1;
     position: relative;
 }
+
 .container11 .title:before {
     margin-left: -100%;
     left: -14px;
 }
+
 .container11 .title:after {
     margin-right: -100%;
     right: -14px;
@@ -827,7 +874,7 @@ footer {
     background: #000;
 }
 
-#toTop {
+.scrollup {
     text-align:center;
     padding:5px;
     position:fixed;
@@ -1584,7 +1631,7 @@ footer .line svg{
         left: 46%;
     }
     
-    #toTop{
+    .scrollup{
         font-size: 30px;
     }
  
