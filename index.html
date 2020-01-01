@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./scss/scssStyle.css">
+    <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
     <div class="wrapper">
@@ -113,12 +114,14 @@
         <section class="container4">
             <div class="container">
                 <div class="row">
-                        <div class="item img1 col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
+                        <div class= "item img1 col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
                             <img src="./image/figure1.png">
                         </div>
-                        <div class="item img2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
+                        <div class="w-100"></div>
+                        <div class="item img2 col-xl-4 col-lg-4 col-md-4 col-sm-4 col" >
                             <img src="./image/figure2.png">
                         </div>
+                        <div class="w-100"></div>
                         <div class="item img3 col-xl-4 col-lg-4 col-md-4 col-sm-4 col">
                             <img src="./image/figure3.png">
                         </div>
@@ -170,6 +173,43 @@
                 </div>
             </div>
         </section>
+
+        <!--_____________________Mobile6______________________________-->
+        <section class="containerMob6">
+            <div class="container">
+                <div class="row">
+                    <div class="item1 col-sm-6 col">
+                        <img src="./image/Rectangle 1.png">
+                        <div class="square1">
+                            <img src="./image/plus.png">
+                            <a href="#">SHOW NOW</a>
+                        </div>
+                            <img src="./image/Rectangle 3.jpg">
+                            <div class="square3"> </div>
+                    </div>    
+
+                    <div class="item2 col-sm-6 col">
+                        <img src="./image/Rectangle 2.png">
+                        <div class="square1">
+                            <img src="./image/plus.png">
+                            <a href="#">SHOW NOW</a>
+                        </div>
+                        <img src="./image/Rectangle  4.png">
+                        <div class="square2">
+                            <img src="./image/plus.png">
+                            <a href="#">SHOW NOW</a>
+                        </div>
+                        <img src="./image/Rectangle 5.png">
+                        <div class="square4">
+                            <img src="./image/plus.png">
+                            <a href="#">SHOW NOW</a>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+
         <section class="container7">
             <div class="center">
                 <div id="categories" class="title">
@@ -428,25 +468,24 @@
     </script>
     <script>
         $(function() {
-          // при нажатии на кнопку scrollup
+
           $('.scrollup').click(function() {
-            // переместиться в верхнюю часть страницы
             $("html, body").scrollTop(0);
           })
         })
-        // при прокрутке окна (window)
         $(window).scroll(function() {
-          // если пользователь прокрутил страницу более чем на 200px
           if ($(this).scrollTop()>200) {
-            // то сделать кнопку scrollup видимой
             $('.scrollup').fadeIn();
           }
-          // иначе скрыть кнопку scrollup
           else {
             $('.scrollup').fadeOut();
           }
         });
         </script>
-         <div class="scrollup"><i class="far fa-caret-square-up"></i></div>
+         <script src="./js/wow.min.js"></script>
+         <script>
+             new WOW().init();
+         </script>
+          <div class="scrollup"><i class="far fa-caret-square-up"></i></div>
 </body>
 </html>

@@ -205,6 +205,12 @@ header .logo img{
     height: auto;
 }
 
+header .logo img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
 header .soc-netw{
     margin-top: 20px;
     text-align: right;
@@ -212,6 +218,12 @@ header .soc-netw{
 
 header .soc-netw img{
     margin: 0 5px;
+}
+
+header .soc-netw img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 header .soc-netw select{
@@ -325,6 +337,16 @@ header .soc-netw select option{
     max-width: 431px;
     width: 100%;
     height: auto;
+}
+
+.container4 img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.container4 .w-100{
+    display: none;
 }
 
 /*_________title_______*/
@@ -499,6 +521,15 @@ header .soc-netw select option{
     position: absolute;
     top: 20px;
     left: 40px;
+}
+
+.container6 .square3:hover{
+    border: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.containerMob6{
+    display: none;
 }
 
 
@@ -697,6 +728,12 @@ header .soc-netw select option{
     width: 100%;
 }
 
+.container10 .brand .item img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .container11 .title {
     overflow: hidden;
     text-align: center;
@@ -836,6 +873,12 @@ footer .item li:hover{
 footer .icons img{
     margin: 0 10px;
     padding-bottom: 50px;
+}
+
+footer .icons img:hover{
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07); 
 }
 
 footer span{
@@ -1396,25 +1439,30 @@ footer .line svg{
         border: 0;
     }
 
+    .owl-carousel .owl-item img {
+        height: 55vh;
+        object-fit: cover;
+    }
+
     .container3 .sale {
         left: 0%;
-        top: 120px;
+        top: 135px;
     }
 
     .container3 .content img {
-        max-width: 100px;
+        max-width: 200px;
     }
 
     .container3 .sale .content a {
-        font-size: 8px;
-        padding: 3px 3px;
-        margin-top: 10px;
+        font-size: 16px !important ;
+        padding: 6px 8px;
+        margin-top: 35px;
     }
 
     .container3 .owl-theme .owl-nav.disabled+.owl-dots span {
-        width: 4px;
-        height: 4px;
-        margin: 0px 4px;
+        width: 10px;
+        height: 10px;
+        margin: 2px 4px;
     }
 
     .container3 .owl-theme .owl-nav.disabled+.owl-dots {
@@ -1422,7 +1470,20 @@ footer .line svg{
     }
 
     .container4 .item {
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .container4 img {
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+    }
+
+    .container4 .w-100{
+        display: block;
     }
 
     .container5 .title {
@@ -1440,6 +1501,7 @@ footer .line svg{
         max-width: 14px;
         max-height: 14px;
     }
+
 
     .container7 .title {
         font-size: 16px;
@@ -1500,58 +1562,217 @@ footer .line svg{
         padding: 20px 0;
     }
 
-    .container6 .square1 {
-        width: 80%;
-        height: 109px;
-        left: 14px;
-        top: 10px;
+    .container6{
+        display: none;
     }
 
-    .container6 .square2 {
-        height: 106px;
-        top: 140px;
-        left: 13px;
-        width: 80%;
+    .containerMob6{
+        display: block;
     }
 
 
-   .container6 .square3 {
-    width: 80%;
-    height: 238px;
-    left: 15px;
-    top: 10px;
-}
-
-    .container6 .item img {
-        margin-bottom: 7px;
-    }
-
-    .container6 .item {
+    .containerMob6 .item1{
         width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        margin-left: 20px;
+        margin-right: 5px;
+        padding: 0;
     }
 
-    .container6 .square1 img {
-        margin-top: 26px;
-        max-width: 15px;
+    .containerMob6 .item2{
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 5px;
+        padding: 0; 
+    }
+    
+    .containerMob6 .item1 img,
+    .containerMob6 .item2 img{
+        max-width: 100%;
+        text-align: center;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .containerMob6 .square1{
+        width: 80%;
+        height: 160px;
+        top: 12px;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 21px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .containerMob6 .square1 a{
+        font-family:'Lato','serif';
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        padding: 6px 10px;
+        margin-top: 0;
+        display:none;
+        text-decoration: none;
+        background: #000;
+    }
+    
+    .containerMob6 .square1 img{
+        margin-top: 40px;
+        max-width: 50px;
+        display: none;
+    }
+    
+    .containerMob6 .square1:hover{
+        border: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .containerMob6 .square1:hover a{
+        display: block;
+    }
+    
+    .containerMob6 .square1:hover img{
+        display: block;
+    }
+    
+    .containerMob6 .square1 a:hover{
+        background: #000;
+    }
+    
+    
+    .containerMob6 .square2{
+        width: 80%;
+        border: 1px solid #fff;
+        height: 156px;
+        position: absolute;
+        top: 206px;
+        left: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .containerMob6 .square2 a{
+        font-family:'Lato','serif';
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        padding: 6px 10px;
+        margin-top: 0;
+        display:none;
+        text-decoration: none;
+        background: #000;
+    }
+    
+    .containerMob6 .square2 img{
+        margin-top: 40px;
+        max-width: 50px;
+        display: none;
+    }
+    
+    .containerMob6 .square2:hover{
+        border: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .containerMob6 .square2:hover a{
+        display: block;
+        
+    }
+    
+    .containerMob6 .square2:hover img{
+        display: block;
+    }
+    
+    .containerMob6 .square2 a:hover{
+        background: #000;
+    }
+    
+    .containerMob6 .square3{
+        width: 80%;
+        border: 1px solid #fff;
+        height: 346px;
+        position: absolute;
+        top: 206px;
+        left: 20px;
     }
 
-    .container6 .square2 img {
-        margin-top: 26px;
-        max-width: 15px;
+    .containerMob6 .square4{
+        width: 80%;
+        height: 154px;
+        top: 398px;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
-
-    .container6 .square1 a {
-        font-size: 6px;
-        padding: 4px 6px;
-        margin-top: 6px;
+    
+    .containerMob6 .square4 a{
+        font-family:'Lato','serif';
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+        padding: 6px 10px;
+        margin-top: 0;
+        display:none;
+        text-decoration: none;
+        background: #000;
     }
-
-    .container6 .square2 a {
-        font-size: 6px;
-        padding: 4px 6px;
-        margin-top: 6px;
+    
+    .containerMob6 .square4 img{
+        margin-top: 40px;
+        max-width: 50px;
+        display: none;
+    }
+    
+    .containerMob6 .square4:hover{
+        border: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    
+    .containerMob6 .square4:hover a{
+        display: block;
+    }
+    
+    .containerMob6 .square4:hover img{
+        display: block;
+    }
+    
+    .containerMob6 .square4 a:hover{
+        background: #000;
     }
 
     #trapezium1 {
@@ -1580,13 +1801,13 @@ footer .line svg{
     }
 
     .container12 .descr1 p {
-        font-size: 12px;
-        margin-top: 40px;
+        font-size: 13px;
+        margin-top: 36px;
     }
 
     .container12 .descr2 p {
-        font-size: 12px;
-        margin-top: 40px;
+        font-size: 13px;
+        margin-top: 36px;
     }
 
     .container12 img {
@@ -1605,8 +1826,14 @@ footer .line svg{
     }
 
     footer .item h3 {
-        font-size: 12px;
+        font-size: 14px;
         margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    footer .item ul{
+        margin-right: 8px;
+        margin-left: 8px;
     }
 
     footer .item li {
@@ -1615,7 +1842,8 @@ footer .line svg{
     }
 
     footer .icons img {
-        max-width: 27px;
+        max-width: 38px;
+        margin: 0 17px;
     }
 
     footer .line svg {
@@ -1631,20 +1859,17 @@ footer .line svg{
 @media(max-width: 375px){
     .container3 .sale {
         left: 0%;
-        top: 120px;
+        top: 153px;
     }
 
     .container3 .content img {
-        max-width: 80px;
+        max-width: 195px;
     }
 
     .container3 .owl-theme .owl-nav.disabled+.owl-dots {
         margin-top: -27px;
     }
 
-    .container4 .item {
-        margin: 0;
-    }
 
     header .navbar .navbar-brand img {
         max-width: 100px;
@@ -1667,6 +1892,10 @@ footer .line svg{
         display: none;
     }
 
+    .container4 img {
+        max-width: 300px;
+    }
+
     
     .container8 .w-100{
         display: block;
@@ -1680,26 +1909,40 @@ footer .line svg{
         padding: 20px 0;
     }
 
-    .container6 .square1 {
-        width: 76%;
-        height: 98px;
-        left: 15px;
-        top: 10px;
-    }
-    .container6 .square2 {
-        height: 95px;
-        top: 129px;
-        left: 15px;
-        width: 76%;
+    .containerMob6 .square1 {
+        width: 80%;
+        height: 140px;
     }
 
-    .container6 .square3 {
-        width: 76%;
-        height: 214px;
-        left: 15px;
-        top: 10px;
+
+    .containerMob6 .square2 {
+        height: 135px;
+        position: absolute;
+        top: 188px;
     }
 
+    .containerMob6 .square3 {
+        height: 306px;
+        top: 188px;
+    }
+
+    .containerMob6 .square4 {
+        height: 134px;
+        top: 358px;
+    }
+
+    .containerMob6 .square1 img,
+    .containerMob6 .square2 img,
+    .containerMob6 .square4 img{
+        max-width: 40px;
+    }
+
+    .containerMob6 .square1 a,
+    .containerMob6 .square2 a,
+    .containerMob6 .square4 a{
+        font-size: 13px;
+        padding: 6px 6px;
+    }
     
     #trapezium1 {
         top: 150px;
@@ -1721,21 +1964,27 @@ footer .line svg{
     .container12 .w-100{
         display: block;
     }
+    .container12 .descr1 {
+        margin-top: -3px;
+    }
+    .container12 .descr2 {
+        margin-top: -3px;
+    }
 
     .container12 .descr1 p {
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 24x;
     }
 
     .container12 .descr2 p {
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .container12 img {
         width: 80%;
         margin: 0;
-        margin-top: 18px;
+        margin-top: 24px;
         margin-bottom: 10px;
     }
     footer .w-100{
@@ -1757,7 +2006,7 @@ footer .line svg{
     }
 
     footer .icons img {
-        max-width: 27px;
+        max-width: 30px;
     }
 
     footer .line svg {
@@ -1789,21 +2038,37 @@ footer .line svg{
         margin: 20px 20px;
     }
 
-    .container11 .title {
-        font-size: 14px;
-        margin: 20px 20px;
+    .containerMob6 .square1 {
+        width: 80%;
+        height: 134px;
+        left: 16px;
     }
 
-    .container6 .square1 {
-        height: 93px;
+    .containerMob6 .square2 {
+        height: 128px;
+        left: 16px;
+        top: 178px;
+    }
+    .containerMob6 .square3 {
+        height: 290px;
+        top: 178px;
+        left: 16px;
     }
 
-    .container6 .square2 {
-        height: 88px;
+    .containerMob6 .square4 {
+        height: 126px;
+        top: 342px;
+        left: 16px;
     }
 
-    .container6 .square3 {
-        height: 208px;
+    .containerMob6 .item1 img, .containerMob6 .item2 img {
+        margin-bottom: 8px;
+    }
+
+    .containerMob6 .square1 a, 
+    .containerMob6 .square2 a, 
+    .containerMob6 .square4 a {
+        font-size: 10px;
     }
 
     #trapezium1 {
@@ -1818,6 +2083,14 @@ footer .line svg{
         top: 200px;
     }
 
+    .container12 .descr1 {
+        margin-top: 20px;
+    }
+
+    .container12 .descr2 {
+        margin-top: 20px;
+    }
+
     .container12 .descr1 p {
         margin-top: 10px;
     }
@@ -1825,37 +2098,34 @@ footer .line svg{
     .container12 .descr2 p {
         margin-top: 10px;
     }
+
+    footer .icons img {
+        max-width: 36px;
+        margin: 0 12px;
+    }
    
 }
 
 @media(max-width: 320px){
     .container3 .sale {
         left: 0%;
-        top: 105px;
+        top: 140px;
     }
 
     .container3 .content img {
-        max-width: 80px;
+        max-width: 160px;
     }
 
     .container3 .sale .content a {
-        font-size: 8px;
-        padding: 3px 3px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
-    .container3 .owl-theme .owl-nav.disabled+.owl-dots span {
-        width: 4px;
-        height: 4px;
-        margin: 0px 4px;
-    }
-
-    .container3 .owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: -27px;
+    .container4 img {
+        max-width: 250px;
     }
 
     .container4 .item {
-        margin: 0;
+        margin-bottom: 10px;
     }
 
     header{
@@ -1880,7 +2150,7 @@ footer .line svg{
     }
 
     header .navbar select {
-        margin-left: 20px;
+        margin-left: 30px;
         background-color: #000;
         color: #fff;
         font-family: 'Lato','serif';
@@ -1895,7 +2165,7 @@ footer .line svg{
     }
 
     .container5 .title {
-        font-size: 14px;
+        margin: 25px 20px;
     }
 
     .container5 .title .svg2 {
@@ -1908,6 +2178,46 @@ footer .line svg{
     .container5 .title img {
         max-width: 14px;
         max-height: 14px;
+    }
+
+    .containerMob6 .item1 img,
+     .containerMob6 .item2 img {
+        margin-bottom: 7px;
+    }
+
+    .containerMob6 .square1 {
+        height: 112px;
+        left: 14px;
+    }
+
+    .containerMob6 .square3 {
+        height: 252px;
+        top: 154px;
+        left: 14px;
+    }
+
+    .containerMob6 .square2 {
+        height: 116px;
+        left: 14px;
+        top: 152px;
+    }
+    .containerMob6 .square4 {
+        height: 110px;
+        top: 296px;
+        left: 14px;
+    }
+
+    .containerMob6 .square1 img,
+    .containerMob6 .square2 img,
+    .containerMob6 .square4 img{
+        max-width: 30px;
+    }
+
+    .containerMob6 .square1 a, 
+    .containerMob6 .square2 a, 
+    .containerMob6 .square4 a{
+        font-size: 11px;
+        padding: 4px 4px;
     }
 
     .container7 .title {
@@ -2076,7 +2386,7 @@ footer .line svg{
     }
 
     footer .icons img {
-        max-width: 27px;
+        max-width: 30px;
     }
 
     footer .line svg {
